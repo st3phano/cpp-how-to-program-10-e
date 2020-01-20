@@ -1,4 +1,4 @@
-//Prints the sum, average, product, smallest and largest
+//Print the sum, average, product, smallest and largest
 //of 3 integers
 #include <iostream>
 
