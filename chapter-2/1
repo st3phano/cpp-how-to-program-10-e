@@ -1,2 +1,2 @@
-1- std::cin is used to enter input, e.g. using the keyboard.
-2- std::cout is used to send output, e.g. displaying on screen.
+1) std::cin is used to enter input.
+2) std::cout is used to send output.
