@@ -1,4 +1,4 @@
-//Print the numbers from 1 to 4
+//Print the ASCII equivalent
 #include <iostream>
 
 using namespace std;
