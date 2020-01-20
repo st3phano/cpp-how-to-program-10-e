@@ -1,4 +1,4 @@
-//Print the ASCII equivalent
+//Print the ASCII corresponding decimal
 #include <iostream>
 
 using namespace std;
