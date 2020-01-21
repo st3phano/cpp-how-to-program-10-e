@@ -1,4 +1,4 @@
-//Read radius of a circle as an integer
+//Reads the radius of a circle as an integer
 //prints diameter, circumference and area
 #include <iostream>
 
