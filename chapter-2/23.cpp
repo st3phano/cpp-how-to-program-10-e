@@ -1,4 +1,4 @@
-//Calculates and print a table of squares and cubes
+//Calculate and print a table of squares and cubes
 //of the integers from 0 to 10
 #include <iostream>
 
