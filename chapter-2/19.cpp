@@ -9,12 +9,14 @@ int main() {
 
     cout << "Enter two integers: ";
     cin >> int1 >> int2;
+    
+    int remainder{int1 % int2};
 
-    if (int1 % int2 == 0) {
+    if (remainder == 0) {
         cout << int1 << " is a multiple of " << int2 << endl;
     }
 
-    if (int1 % int2 != 0) {
+    if (remainder != 0) {
         cout << int1 << " is not a multiple of " << int2 << endl;
     }
 }
