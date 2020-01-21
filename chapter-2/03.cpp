@@ -1,4 +1,4 @@
-1) cout << "Enter two numbers";
+1) std::cout << "Enter two numbers";
 2) a = b * c;
-3) //Performs a payroll calculation
+3) //The following program performs a payroll calculation
 4) cin >> a >> b >> c;
