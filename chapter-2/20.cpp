@@ -1,4 +1,4 @@
-//Prints a checkboard pattern in two different ways
+//Print a checkboard pattern in two different ways
 #include <iostream>
 
 using namespace std;
