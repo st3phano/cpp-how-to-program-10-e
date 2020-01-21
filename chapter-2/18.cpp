@@ -1,4 +1,4 @@
-//Determines if an integer is odd or even
+//Determine if an integer is odd or even
 #include <iostream>
 
 using namespace std;
