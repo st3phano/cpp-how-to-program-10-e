@@ -1,4 +1,4 @@
-//Prints a box, an oval, and arrow and a diamond
+//Prints a box, an oval, an arrow and a diamond
 #include <iostream>
 
 using namespace std;
