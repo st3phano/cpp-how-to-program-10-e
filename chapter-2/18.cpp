@@ -8,12 +8,14 @@ int main() {
 
     cout << "Enter an integer: ";
     cin >> integer;
+    
+    int remainder{integer % 2};
 
-    if (integer % 2 == 0) {
+    if (remainder == 0) {
         cout << integer << " is even." << endl;
     }
 
-    if (integer % 2 == 1) {
+    if (remainder == 1) {
         cout << integer << " is odd." << endl;
     }
 }
