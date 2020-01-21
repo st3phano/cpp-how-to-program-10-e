@@ -50,5 +50,4 @@ int main() {
     integer = 10;
     cout << integer << "\t" << integer * integer << "\t"
          << integer * integer * integer << endl;
-
 }
