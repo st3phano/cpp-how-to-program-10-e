@@ -1,5 +1,4 @@
-//Asks for two integers and
-//print the sum, product, difference and quotient
+//Calculate the sum, product, difference and quotient of 2 ints
 #include <iostream>
 
 using namespace std;
