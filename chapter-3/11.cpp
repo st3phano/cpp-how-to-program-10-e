@@ -4,8 +4,11 @@
 
 class HeartRates {
 public:
-	HeartRates(std::string firstN, std::string lastN, int month, int day, int year)
-		: firstName{firstN}, lastName{lastN}, monthOfBirth{month}, dayOfBirth{day}, yearOfBirth{year} {
+	HeartRates(std::string firstN, std::string lastN,
+		int month, int day, int year)
+		: firstName{firstN}, lastName{lastN}, monthOfBirth{month},
+		dayOfBirth{day}, yearOfBirth{year} {
+		//constructor
 	}
 
 	int getAge(int currentMonth, int currentDay, int currentYear) const {
