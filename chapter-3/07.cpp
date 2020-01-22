@@ -39,7 +39,7 @@ public:
 private:
 	std::string firstName;
 	std::string lastName;
-	int salary;
+	int salary{0};
 }; //end of Employee class
 
 #include <iostream>
