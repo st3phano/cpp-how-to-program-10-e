@@ -1,4 +1,4 @@
-// Account class with withdraw function added.
+//Account class with withdraw function added.
 #include <string>
 #include <iostream>
 
