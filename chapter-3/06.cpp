@@ -60,6 +60,6 @@ public:
 private:
     std::string partNumber;
     std::string partDescription;
-    int quantity{ 0 };
-    int price{ 0 };
+    int quantity{0};
+    int price{0};
 };
