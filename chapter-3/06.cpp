@@ -1,4 +1,4 @@
-// Invoice class with constructor, set and get functions
+//Invoice class with constructor, set and get functions
 #include <string>
 
 class Invoice {
