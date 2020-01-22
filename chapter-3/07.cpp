@@ -19,9 +19,12 @@ public:
 	}
 
 	void setSalary(int amount) {
-		if (amount > 0) {
-			salary = amount;
+		if (amount < 0) {
+			salary = 0;
+			return;
 		}
+		
+		salary = amount;
 	}
 
 	std::string getFirstName() const {
