@@ -3,8 +3,8 @@
 
 class Invoice {
 public:
-    Invoice(std::string number, std::string description, int amount, int cost) :
-        partNumber{ number }, partDescription{ description } {
+    Invoice(std::string number, std::string description, int amount, int cost)
+        : partNumber{number}, partDescription{description} {
         if (amount > 0) {
             quantity = amount;
         }
