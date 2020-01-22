@@ -74,9 +74,9 @@ public:
 private:
 	std::string firstName;
 	std::string lastName;
-	int monthOfBirth{1};
-	int dayOfBirth{1};
-	int yearOfBirth{2000};
+	int monthOfBirth{0};
+	int dayOfBirth{0};
+	int yearOfBirth{0};
 }; //end of HeartRates class
 
 
