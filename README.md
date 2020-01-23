@@ -36,3 +36,27 @@ Chapter 3:
 
 -Making a class’s data members private and member functions public facilitates debugging
 because problems with data manipulations are localized to the member functions.
+
+
+Chapter 4:
+
+-The precedence of the conditional operator is low, so the entire conditional expression is normally placed in parentheses.
+
+-Conditional expressions can be used in some situations where if…else statements cannot.
+
+-https://en.wikipedia.org/wiki/Integer_overflow#Security_ramifications
+
+-The maximum and minimum values that can be stored in an int variable are represented by the constants INT_MAX and INT_MIN, 
+respectively, which are defined in the header <climits>. There are similar constants for the other integral types 
+and for floating-point types (header <cfloat>).
+
+-According to the C++ standard, the result of division by zero in floating-point arithmetic is undefined. 
+When performing division (/) or remainder (%) calculations in which the right operand could be zero, 
+test for this and handle it (e.g., display an error message) rather than allowing the calculation to proceed.
+
+-When the stream manipulators fixed and setprecision are used, the printed value is rounded 
+to the number of decimal positions indicated by setprecision’s argument (2 in this example), 
+although the value in memory remains unaltered.
+
+-The conditional operator (?:), the unary operators preincrement (++), predecrement (--), plus (+) and minus (-), 
+and the assignment operators =, +=, -=, *=, /= and %= associate from right to left.
