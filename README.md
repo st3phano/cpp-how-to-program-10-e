@@ -55,7 +55,7 @@ When performing division (/) or remainder (%) calculations in which the right op
 test for this and handle it (e.g., display an error message) rather than allowing the calculation to proceed.
 
 -When the stream manipulators fixed and setprecision are used, the printed value is rounded 
-to the number of decimal positions indicated by setprecision’s argument (2 in this example), 
+to the number of decimal positions indicated by setprecision’s argument, 
 although the value in memory remains unaltered.
 
 -The conditional operator (?:), the unary operators preincrement (++), predecrement (--), plus (+) and minus (-), 
