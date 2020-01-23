@@ -7,7 +7,6 @@ public:
         : partNumber{number}, partDescription{description} {
         setQuantity(amount);
         setPrice(cost);
-        }
     }
 
     void setPartNumber(std::string number) {
