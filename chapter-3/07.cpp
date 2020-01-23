@@ -5,9 +5,7 @@ class Employee {
 public:
 	Employee(std::string firstN, std::string lastN, int amount)
 		: firstName{firstN}, lastName{lastN} {
-		if (amount > 0) {
-			salary = amount;
-		}
+		setSalary(amount);
 	}
 
 	void setFirstName(std::string name) {
