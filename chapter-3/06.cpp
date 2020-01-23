@@ -5,12 +5,8 @@ class Invoice {
 public:
     Invoice(std::string number, std::string description, int amount, int cost)
         : partNumber{number}, partDescription{description} {
-        if (amount > 0) {
-            quantity = amount;
-        }
-
-        if (cost > 0) {
-            price = cost;
+        setQuantity(amount);
+        setPrice(cost);
         }
     }
 
