@@ -5,15 +5,7 @@ class Date {
 public:
 	Date(int toMonth, int toDay, int toYear)
 		: day{toDay}, year{toYear} {
-		if (toMonth < 1) {
-			return;
-		}
-
-		if (toMonth > 12) {
-			return;
-		}
-
-		month = toMonth;
+		setMonth(toMonth);
 	}
 
 	void setMonth(int toMonth) {
