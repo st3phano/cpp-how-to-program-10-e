@@ -1,4 +1,4 @@
-//Determine if a integer is a palindrome
+//Determine if an integer is a palindrome
 #include <iostream>
 
 using namespace std;
