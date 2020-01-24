@@ -7,7 +7,6 @@ int main() {
 	cout << "How many terms to use in the summation: ";
 	unsigned int terms;
 	cin >> terms;
-	unsigned int precision{terms};
 
 	double e{1};
 	while (terms > 0) {
