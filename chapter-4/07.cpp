@@ -4,13 +4,13 @@
 using namespace std;
 
 int main() {
-	cout << "Enter the 1th number of 10: ";
+	unsigned int counter{1};
+	cout << "Enter the << counter << "st number of 10: ";
 	int largest;
 	cin >> largest;
-
-	unsigned int counter{1};
+	
 	while (++counter <= 10) {
-		cout << "Enter the " << counter << "th number of 10: ";
+		cout << "Enter the " << counter << "st number of 10: ";
 		int number;
 		cin >> number;
 
