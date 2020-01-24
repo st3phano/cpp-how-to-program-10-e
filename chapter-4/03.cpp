@@ -34,7 +34,7 @@ int main() {
     unsigned int totalMiles{0}, totalGallons{0};
 
     cout << "Enter miles driven (-1 to quit): ";
-    unsigned int milesDriven;
+    int milesDriven;
     cin >> milesDriven;
 
     while (milesDriven != -1) {
