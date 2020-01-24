@@ -1,4 +1,4 @@
-//Estimates the value of mathematical e
+//Estimate the value of mathematical e
 #include <iostream>
 
 using namespace std;
