@@ -1,4 +1,4 @@
-//Print a hollow square of asterisks and blanks based on input size
+//Print a hollow square of asterisks and blanks based on input
 #include<iostream>
 
 using namespace std;
