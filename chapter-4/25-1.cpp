@@ -1,4 +1,4 @@
-//Computes the factorial
+//Compute the factorial
 #include <iostream>
 
 using namespace std;
