@@ -14,7 +14,7 @@
  *Input the milesDriven (possibly the sentinel)
  *
  *While the user has not yet entered the sentinel
- *  Promp the user to enter gallonsUsed
+ *  Prompt the user to enter gallonsUsed
  *  Input the gallonsUsed
  *  Add milesDriven to totalMiles
  *  Add gallonsUsed to totalGallons
