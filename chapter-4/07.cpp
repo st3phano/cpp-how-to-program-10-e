@@ -1,4 +1,4 @@
-//Determine the largest of 10 integers input by the user
+//Determine the largest of 10 integers
 #include <iostream>
 
 using namespace std;
