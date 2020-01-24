@@ -1,5 +1,5 @@
 /*Calculates the miles per gallon for each trip 
- *and the total miles per gallon
+ *and the total miles per total gallons
  */
 
 /*Initialize variables
