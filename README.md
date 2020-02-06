@@ -60,3 +60,23 @@ although the value in memory remains unaltered.
 
 -The conditional operator (?:), the unary operators preincrement (++), predecrement (--), plus (+) and minus (-), 
 and the assignment operators =, +=, -=, *=, /= and %= associate from right to left.
+
+Chapter 5:
+
+-Using the final value and operator <= in a loop’s condition helps avoid off-by-one errors.
+
+-If a program must modify the control variable’s value in the loop’s body, use while rather than for.
+
+-The value and type of a comma-separated list of expressions is the value and type of the rightmost expression.
+
+-In loops, avoid calculations for which the result never changes—such calculations should typically be placed before the loop.
+
+-Using floating-point numbers in a manner that assumes they’re represented exactly (e.g., using them in comparisons for equality) can lead to incorrect results. Floating-point numbers are represented only approximately.
+
+-Do not use variables of type double (or float) to perform precise monetary calculations. The imprecision of floating-point numbers can lead to errors.
+
+-There’s a tension between achieving quality software engineering and achieving the best-performing software. Sometimes one of these goals is achieved at the expense of the other. For all but the most performance-intensive situations, apply the following rule of thumb: First, make your code simple and correct; then make it fast and small, but only if necessary.
+
+-Consider the expression (i != 0) && (10 / i == 2). The dependent condition (10 / i== 2) must appear after the && operator to prevent the possibility of division by zero.
+
+-Placing the literal on the left, as in 7 == x, enables the compiler to issue an error if you accidentally replace the == operator with = .
