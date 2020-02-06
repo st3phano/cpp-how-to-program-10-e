@@ -1,4 +1,4 @@
-Chapter 2:
+<strong>Chapter 2:</strong>
 
 -Every program should begin with a comment that describes the purpose of the program.
 
@@ -23,7 +23,7 @@ Chapter 2:
 -If a statement is split across two or more lines, indent all subsequent lines and left-align the group of indented lines.
 
 
-Chapter 3:
+<strong>Chapter 3:</strong>
 
 -Class names begin with an initial uppercase letter, and member-function and data-member names begin with an initial lowercase letter.
 
@@ -38,7 +38,7 @@ Chapter 3:
 because problems with data manipulations are localized to the member functions.
 
 
-Chapter 4:
+<strong>Chapter 4:</strong>
 
 -The precedence of the conditional operator is low, so the entire conditional expression is normally placed in parentheses.
 
@@ -61,7 +61,7 @@ although the value in memory remains unaltered.
 -The conditional operator (?:), the unary operators preincrement (++), predecrement (--), plus (+) and minus (-), 
 and the assignment operators =, +=, -=, *=, /= and %= associate from right to left.
 
-Chapter 5:
+<strong>Chapter 5:</strong>
 
 -Using the final value and operator <= in a loop’s condition helps avoid off-by-one errors.
 
