@@ -5,6 +5,7 @@ class Account {
 public:
 	Account(unsigned int number, std::string firstN, std::string lastN, double initialBalance)
 		: accountNumber{number}, firstName{firstN}, lastName{lastN}, balance{initialBalance} {
+		//constructor
 	}
 private:
 	unsigned int accountNumber{0};
