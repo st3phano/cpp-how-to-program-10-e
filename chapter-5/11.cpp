@@ -24,13 +24,13 @@ int main() {
 
 	cout << '\n';
 
-	unsigned int blankPerRow{0};
+	unsigned int blanksPerRow{0};
 	for (unsigned int asterisksPerRow{10}; asterisksPerRow >= 1; --asterisksPerRow) {
 
-		for (unsigned int blankSpace{0}; blankSpace < blankPerRow; ++blankSpace) {
+		for (unsigned int blankSpace{0}; blankSpace < blanksPerRow; ++blankSpace) {
 			cout << ' ';
 		}
-		++blankPerRow;
+		++blanksPerRow;
 
 		for (unsigned int asterisks{1}; asterisks <= asterisksPerRow; ++asterisks) {
 			cout << '*';
@@ -41,13 +41,13 @@ int main() {
 
 	cout << '\n';
 
-	blankPerRow = 9;
+	blanksPerRow = 9;
 	for (unsigned int asterisksPerRow{1}; asterisksPerRow <= 10; ++asterisksPerRow) {
 
-		for (unsigned int blankSpace{0}; blankSpace < blankPerRow; ++blankSpace) {
+		for (unsigned int blankSpace{0}; blankSpace < blanksPerRow; ++blankSpace) {
 			cout << ' ';
 		}
-		--blankPerRow;
+		--blanksPerRow;
 
 		for (unsigned int asterisks{1}; asterisks <= asterisksPerRow; ++asterisks) {
 			cout << '*';
