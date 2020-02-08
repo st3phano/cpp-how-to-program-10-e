@@ -34,7 +34,7 @@ int main() {
 		}
 
 		totalValue += retailPrice * quantitySold;
-	} while (product != -1);
+	} while (product != -1 && quantitySold != -1);
 
 	cout << "Total retail value is: $" << totalValue << endl;
 }
