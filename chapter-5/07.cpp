@@ -5,7 +5,7 @@ using namespace std;
 
 int main() {
 
-	cout << "Enter the number of values will be inputed: ";
+	cout << "Enter the number of values: ";
 	unsigned int numberOfValues;
 	cin >> numberOfValues;
 
