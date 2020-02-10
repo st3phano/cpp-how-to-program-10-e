@@ -1,4 +1,4 @@
-// Fig. 5.7: Interest.cpp
+//Fig. 5.7: Interest.cpp
 #include <iostream>
 
 using namespace std;
