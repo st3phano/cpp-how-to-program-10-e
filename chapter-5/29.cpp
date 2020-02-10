@@ -1,7 +1,6 @@
 //Fig. 5.8: DollarAmount.h
 //DollarAmount class stores dollar amounts as whole numbers of pennies
 #include <string>
-#include <cmath>
 
 class DollarAmount {
 public:
@@ -33,7 +32,7 @@ public:
 		int64_t interestToAdd{(dollars * 100 + cents) * rate};
 
 		if ((interestToAdd % divisor / (divisor / 10) == 5) //contain .5?
-		&& (interestToAdd / divisor % 2 == 0)) {        //is a even number?
+		    && (interestToAdd / divisor % 2 == 0)) {        //is a even number?
 			interestToAdd = (interestToAdd - divisor / 2) / divisor;
 		}
 		else {
