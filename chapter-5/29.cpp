@@ -9,7 +9,6 @@ public:
 		//constructor
 	}
 
-
 	void add(DollarAmount right) {
 		dollars += right.dollars;
 		cents += right.cents;
@@ -21,15 +20,14 @@ public:
 	}
 
 	void divide(int divisor) {
-		int64_t amount{dollars * 100 + cents};
+		int64_t roundedPennies{(getPenniesAmount() + divisor / 2) / divisor};
 
-		amount = (amount + divisor / 2) / divisor;
-		dollars = amount / 100;
-		cents = amount % 100;
+		dollars = roundedPennies / 100;
+		cents = roundedPennies % 100;
 	}
 
 	void addInterest(int rate, int divisor) {
-		int64_t interestToAdd{(dollars * 100 + cents) * rate};
+		int64_t interestToAdd{getPenniesAmount() * rate};
 
 		if ((interestToAdd % divisor / (divisor / 10) == 5) //contain .5?
 		    && (interestToAdd / divisor % 2 == 0)) {        //is a even number?
@@ -48,6 +46,10 @@ public:
 		std::string dollarString{std::to_string(dollars)};
 		std::string centString{std::to_string(cents)};
 		return dollarString + "." + (centString.size() == 1 ? "0" : "") + centString;
+	}
+
+	int64_t getPenniesAmount() const {
+		return dollars * 100 + cents;
 	}
 private:
 	int64_t dollars{0};
