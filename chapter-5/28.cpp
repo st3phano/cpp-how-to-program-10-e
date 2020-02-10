@@ -29,7 +29,7 @@ public:
 		int64_t interestToAdd{amount * rate};
 
 		if ((interestToAdd % divisor / (divisor / 10) == 5) //contain .5?
-			&& (interestToAdd / divisor % 2 == 0)) {        //is a even number?
+			&& (interestToAdd / divisor % 2 == 0)) {    //is a even number?
 			interestToAdd = (interestToAdd - divisor / 2) / divisor;
 		}
 		else {
