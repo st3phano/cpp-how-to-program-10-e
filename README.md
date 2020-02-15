@@ -80,3 +80,67 @@ and the assignment operators =, +=, -=, *=, /= and %= associate from right to le
 -Consider the expression (i != 0) && (10 / i == 2). The dependent condition (10 / i== 2) must appear after the && operator to prevent the possibility of division by zero.
 
 -Placing the literal on the left, as in 7 == x, enables the compiler to issue an error if you accidentally replace the == operator with = .
+
+<strong>Chapter 6:</strong>
+
+-To promote software reusability, every function should be limited to performing a single, well-defined task, and the name of the function should express that task effectively.
+
+-For industrial-strength code, always check that the arguments you pass to math functions are valid.
+
+-A function that has many parameters may be performing too many tasks. Consider dividing the function into smaller functions that perform the separate tasks.
+
+-The order of evaluation of a function’s arguments is not specified by the C++ standard. Thus, different compilers can evaluate function arguments in different orders.
+
+-Sometimes when a function’s arguments are expressions, such as those with calls to other functions, the order in which the compiler evaluates the arguments could affect the values of one or more of the arguments. If the evaluation order changes between compilers, the argument values passed to the function could vary, causing subtle logic errors.
+
+-If you have doubts about the order of evaluation of a function’s arguments and whether the order would affect the values passed to the function, evaluate the arguments in separate assignment statements before the function call, assign the result of each expression to a local variable, then pass those variables as arguments to the function.
+
+-Always provide function prototypes, even though it’s possible to omit them when functions are defined before they’re used. Providing the prototypes avoids tying the code to the order in which functions are defined.
+
+-The portion of a function prototype that includes the name of the function and the types of its arguments is called the function signature or simply the signature. The function’s return type is not part of the function signature. Functions in the same scope must have unique signatures.
+
+-If a square function that uses an integer parameter is called with a floating-point argument, the argument is converted to int (a lower type and thus a narrowing conversion), and square could return an incorrect value.
+
+-Provide a default case in a switch to catch errors even if you are absolutely, positively certain that you have no bugs!
+
+-To make numeric literals more readable, C++14 allows you to insert between groups of digits in numeric literals the digit separator ' (a single-quote character).
+
+-By convention, you should capitalize the first letter of an enum class’s name.
+
+-Use only uppercase letters in enumeration constant names. This makes these constants stand out in a program and reminds you that enumeration constants are not variables.
+
+-Qualifying an enum class’s constant with its typename and :: explicitly identifies the constant as being in the scope of the specified enum class. If another enum class contains the same identifier for one of its constants, it’s always clear which version of the constant is being used, because the typename and :: are required.
+
+-Use scoped enums to avoid the potential naming conflicts that can occur with unscoped enum constants.
+
+-Local variables also may be declared static. Such variables also have block scope, but unlike other local variables, a static local variable retains its value when the function returns to its caller. The next time the function is called, the static local variable contains the value it had when the function last completed execution. All static local variables of numeric types are initialized to zero by default.
+
+-Declaring a variable as global rather than local allows unintended side effects to occur when a function that does not need access to the variable accidentally or maliciously modifies it. In general, variables should be declared in the narrowest scope in which they need to be accessed.
+
+-Stack frame is also known as activation record.
+
+-The amount of memory in a computer is finite, so only a certain amount of memory can be used to store activation records on the function-call stack. If more function calls occur than can have their activation records stored on the function-call stack, a fatal error known as stack overflow occurs.
+
+-If you change the definition of an inline function, you must recompile all of that function’s clients.
+
+-The const qualifier should be used to enforce the principle of least privilege. Using this principle to properly design software can greatly reduce debugging time and improper side effects and can make a program easier to modify and maintain.
+
+-Because reference parameters are mentioned only by name in the body of the called function, you might inadvertently treat reference parameters as pass-by-value parameters. This can cause unexpected side effects if the original variables are changed by the function.
+
+-For passing large objects, use a const reference parameter to simulate the appearance and security of pass-by-value and avoid the overhead of passing a copy of the large object.
+
+-When returning a reference to a local variable—unless that variable is declared static—the reference refers to a variable that’s discarded when the function terminates. An attempt to access such a variable yields undefined behavior.
+
+-Always using the unary scope resolution operator (::) to refer to global variables (even if there is no collision with a local-variable name) makes it clear that you’re intending to access a global variable rather than a local variable.
+
+-Every parameter in the template parameter list is preceded by keyword typename or keyword class (they are synonyms in this context).
+
+-The ratio of successive Fibonacci numbers converges on a constant value of 1.618…
+
+-unsigned int == unsigned?
+
+-Do not depend on the order in which operands are evaluated. To ensure that side effects are applied in the correct order, break complex expressions into separate statements.
+
+-Recall that the && and || operators use short-circuit evaluation. Placing an expression with a side effect on the right side of a && or || operator is a logic error if that expression should always be evaluated.
+
+-Avoid using recursion in performance situations. Recursive calls take time and consume additional memory. Any problem that can be solved recursively can also be solved iteratively (nonrecursively).
