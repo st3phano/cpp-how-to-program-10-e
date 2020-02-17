@@ -1,5 +1,7 @@
 <strong>Chapter 2:</strong>
 
+
+
 -Every program should begin with a comment that describes the purpose of the program.
 
 -If program execution reaches the end of main without encountering a return statement, it’s assumed that the program terminated successfully.
@@ -25,6 +27,8 @@
 
 <strong>Chapter 3:</strong>
 
+
+
 -Class names begin with an initial uppercase letter, and member-function and data-member names begin with an initial lowercase letter.
 
 -Place a class’s data members last in the class’s body.
@@ -39,6 +43,8 @@ because problems with data manipulations are localized to the member functions.
 
 
 <strong>Chapter 4:</strong>
+
+
 
 -The precedence of the conditional operator is low, so the entire conditional expression is normally placed in parentheses.
 
@@ -63,6 +69,8 @@ and the assignment operators =, +=, -=, *=, /= and %= associate from right to le
 
 <strong>Chapter 5:</strong>
 
+
+
 -Using the final value and operator <= in a loop’s condition helps avoid off-by-one errors.
 
 -If a program must modify the control variable’s value in the loop’s body, use while rather than for.
@@ -82,6 +90,8 @@ and the assignment operators =, +=, -=, *=, /= and %= associate from right to le
 -Placing the literal on the left, as in 7 == x, enables the compiler to issue an error if you accidentally replace the == operator with = .
 
 <strong>Chapter 6:</strong>
+
+
 
 -To promote software reusability, every function should be limited to performing a single, well-defined task, and the name of the function should express that task effectively.
 
