@@ -1,6 +1,4 @@
-<strong>Chapter 2:</strong>
-
-
+<h1>Chapter 2:</h1>
 
 -Every program should begin with a comment that describes the purpose of the program.
 
@@ -25,9 +23,7 @@
 -If a statement is split across two or more lines, indent all subsequent lines and left-align the group of indented lines.
 
 
-<strong>Chapter 3:</strong>
-
-
+<h1>Chapter 3:</h1>
 
 -Class names begin with an initial uppercase letter, and member-function and data-member names begin with an initial lowercase letter.
 
@@ -42,13 +38,9 @@
 because problems with data manipulations are localized to the member functions.
 
 
-<strong>Chapter 4:</strong>
+<h1>Chapter 4:</h1>
 
-
-
--The precedence of the conditional operator is low, so the entire conditional expression is normally placed in parentheses.
-
--Conditional expressions can be used in some situations where if…else statements cannot.
+-Conditional expressions can be used in some situations where if…else statements cannot, but the precedence of the conditional operator is low, so the entire conditional expression is normally placed in parentheses.
 
 -https://en.wikipedia.org/wiki/Integer_overflow#Security_ramifications
 
@@ -67,9 +59,8 @@ although the value in memory remains unaltered.
 -The conditional operator (?:), the unary operators preincrement (++), predecrement (--), plus (+) and minus (-), 
 and the assignment operators =, +=, -=, *=, /= and %= associate from right to left.
 
-<strong>Chapter 5:</strong>
 
-
+<h1>Chapter 5:</h1>
 
 -Using the final value and operator <= in a loop’s condition helps avoid off-by-one errors.
 
@@ -77,33 +68,24 @@ and the assignment operators =, +=, -=, *=, /= and %= associate from right to le
 
 -The value and type of a comma-separated list of expressions is the value and type of the rightmost expression.
 
--In loops, avoid calculations for which the result never changes—such calculations should typically be placed before the loop.
+-In loops, avoid calculations for which the result never changes, such calculations should typically be placed before the loop.
 
--Using floating-point numbers in a manner that assumes they’re represented exactly (e.g., using them in comparisons for equality) can lead to incorrect results. Floating-point numbers are represented only approximately.
+-Using floating-point numbers in a manner that assumes they’re represented exactly (e.g. using them in comparisons for equality or to perform precise monetary calculations) can lead to incorrect results. Floating-point numbers are represented only approximately.
 
--Do not use variables of type double (or float) to perform precise monetary calculations. The imprecision of floating-point numbers can lead to errors.
-
--There’s a tension between achieving quality software engineering and achieving the best-performing software. Sometimes one of these goals is achieved at the expense of the other. For all but the most performance-intensive situations, apply the following rule of thumb: First, make your code simple and correct; then make it fast and small, but only if necessary.
+-For all but the most performance-intensive situations, apply the following rule of thumb: First, make your code simple and correct; then make it fast and small, but only if necessary.
 
 -Consider the expression (i != 0) && (10 / i == 2). The dependent condition (10 / i== 2) must appear after the && operator to prevent the possibility of division by zero.
 
 -Placing the literal on the left, as in 7 == x, enables the compiler to issue an error if you accidentally replace the == operator with = .
 
-<strong>Chapter 6:</strong>
 
+<h1>Chapter 6:</h1>
 
-
--To promote software reusability, every function should be limited to performing a single, well-defined task, and the name of the function should express that task effectively.
+-To promote software reusability, every function should be limited to performing a single, well-defined task, and the name of the function should express that task effectively. A function that has many parameters may be performing too many tasks. Consider dividing the function into smaller functions that perform the separate tasks.
 
 -For industrial-strength code, always check that the arguments you pass to math functions are valid.
 
--A function that has many parameters may be performing too many tasks. Consider dividing the function into smaller functions that perform the separate tasks.
-
--The order of evaluation of a function’s arguments is not specified by the C++ standard. Thus, different compilers can evaluate function arguments in different orders.
-
--Sometimes when a function’s arguments are expressions, such as those with calls to other functions, the order in which the compiler evaluates the arguments could affect the values of one or more of the arguments. If the evaluation order changes between compilers, the argument values passed to the function could vary, causing subtle logic errors.
-
--If you have doubts about the order of evaluation of a function’s arguments and whether the order would affect the values passed to the function, evaluate the arguments in separate assignment statements before the function call, assign the result of each expression to a local variable, then pass those variables as arguments to the function.
+-The order of evaluation of a function’s arguments is not specified by the C++ standard. Sometimes when a function’s arguments are expressions, such as those with calls to other functions, the order in which the compiler evaluates the arguments could affect the values of one or more of the arguments. If the evaluation order changes between compilers, the argument values passed to the function could vary, causing subtle logic errors, to ensure the order evaluate the arguments in separate assignment statements before the function call.
 
 -Always provide function prototypes, even though it’s possible to omit them when functions are defined before they’re used. Providing the prototypes avoids tying the code to the order in which functions are defined.
 
@@ -115,9 +97,7 @@ and the assignment operators =, +=, -=, *=, /= and %= associate from right to le
 
 -To make numeric literals more readable, C++14 allows you to insert between groups of digits in numeric literals the digit separator ' (a single-quote character).
 
--By convention, you should capitalize the first letter of an enum class’s name.
-
--Use only uppercase letters in enumeration constant names. This makes these constants stand out in a program and reminds you that enumeration constants are not variables.
+-By convention, you should capitalize the first letter of an enum class’s name and use only uppercase letters in enumeration constant names.
 
 -Qualifying an enum class’s constant with its typename and :: explicitly identifies the constant as being in the scope of the specified enum class. If another enum class contains the same identifier for one of its constants, it’s always clear which version of the constant is being used, because the typename and :: are required.
 
@@ -127,30 +107,22 @@ and the assignment operators =, +=, -=, *=, /= and %= associate from right to le
 
 -Declaring a variable as global rather than local allows unintended side effects to occur when a function that does not need access to the variable accidentally or maliciously modifies it. In general, variables should be declared in the narrowest scope in which they need to be accessed.
 
--Stack frame is also known as activation record.
-
--The amount of memory in a computer is finite, so only a certain amount of memory can be used to store activation records on the function-call stack. If more function calls occur than can have their activation records stored on the function-call stack, a fatal error known as stack overflow occurs.
+-Stack frame is also known as activation record. If more function calls occur than can have their activation records stored on the function-call stack, a fatal error known as stack overflow occurs.
 
 -If you change the definition of an inline function, you must recompile all of that function’s clients.
 
--The const qualifier should be used to enforce the principle of least privilege. Using this principle to properly design software can greatly reduce debugging time and improper side effects and can make a program easier to modify and maintain.
+-The const qualifier should be used to enforce the principle of least privilege.
 
 -Because reference parameters are mentioned only by name in the body of the called function, you might inadvertently treat reference parameters as pass-by-value parameters. This can cause unexpected side effects if the original variables are changed by the function.
 
 -For passing large objects, use a const reference parameter to simulate the appearance and security of pass-by-value and avoid the overhead of passing a copy of the large object.
 
--When returning a reference to a local variable—unless that variable is declared static—the reference refers to a variable that’s discarded when the function terminates. An attempt to access such a variable yields undefined behavior.
+-When returning a reference to a local variable, unless that variable is declared static, the reference refers to a variable that’s discarded when the function terminates. An attempt to access such a variable yields undefined behavior.
 
 -Always using the unary scope resolution operator (::) to refer to global variables (even if there is no collision with a local-variable name) makes it clear that you’re intending to access a global variable rather than a local variable.
 
 -Every parameter in the template parameter list is preceded by keyword typename or keyword class (they are synonyms in this context).
 
--The ratio of successive Fibonacci numbers converges on a constant value of 1.618…
-
--unsigned int == unsigned?
-
--Do not depend on the order in which operands are evaluated. To ensure that side effects are applied in the correct order, break complex expressions into separate statements.
-
--Recall that the && and || operators use short-circuit evaluation. Placing an expression with a side effect on the right side of a && or || operator is a logic error if that expression should always be evaluated.
+-Do not depend on the order in which operands are evaluated. To ensure that side effects are applied in the correct order, break complex expressions into separate statements. Recall that the && and || operators use short-circuit evaluation. Placing an expression with a side effect on the right side of a && or || operator is a logic error if that expression should always be evaluated.
 
 -Avoid using recursion in performance situations. Recursive calls take time and consume additional memory. Any problem that can be solved recursively can also be solved iteratively (nonrecursively).
