@@ -12,6 +12,6 @@ int main() {
 		int y{static_cast<int>(floor(x + 0.5))};
 
 		cout << "Original number: " << x << "\nRounded number: " << y << endl;
-		cout << "Enter a value to be rounded (EOF to exit): ";
+		cout << "\nEnter a value to be rounded (EOF to exit): ";
 	}
 }
