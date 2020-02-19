@@ -4,10 +4,10 @@
 
 using namespace std;
 
-int roundToInteger(const double number);
-double roundToTenths(const double number);
-double roundToHundredths(const double number);
-double roundToThousandths(const double number);
+int roundToInteger(const double& number);
+double roundToTenths(const double& number);
+double roundToHundredths(const double& number);
+double roundToThousandths(const double& number);
 
 int main() {
 	cout << "Enter a value to be rounded (EOF to exit): ";
@@ -25,18 +25,18 @@ int main() {
 	}
 }
 
-int roundToInteger(const double number) {
+int roundToInteger(const double& number) {
 	return floor(number + 0.5);
 }
 
-double roundToTenths(const double number) {
+double roundToTenths(const double& number) {
 	return floor(number * 10 + 0.5) / 10;
 }
 
-double roundToHundredths(const double number) {
+double roundToHundredths(const double& number) {
 	return floor(number * 100 + 0.5) / 100;
 }
 
-double roundToThousandths(const double number) {
+double roundToThousandths(const double& number) {
 	return floor(number * 1000 + 0.5) / 1000;
 }
