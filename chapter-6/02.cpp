@@ -5,7 +5,7 @@
 
 using namespace std;
 
-const double calculateCharges(const double hours);
+const double calculateCharges(const double& hours);
 
 int main() {
 	cout << "Enter the hours parked for each of the 3 customers:\n";
@@ -26,7 +26,7 @@ int main() {
 	cout << left << setw(10) << "TOTAL" << right << setw(10) << totalHours << setw(10) << totalFee << endl;
 }
 
-const double calculateCharges(const double hours) {
+const double calculateCharges(const double& hours) {
 	const double minimumHours{3};
 
 	const double minimumFee{20.00};
