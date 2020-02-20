@@ -6,13 +6,13 @@ using namespace std;
 
 int celsius(const int fahrenheit);
 int fahrenheit(const int celsius);
-void printCtoFChart(unsigned initialTemp, const unsigned finalTemp, const unsigned itemsPerRow);
-void printFtoCChart(unsigned initialTemp, const unsigned finalTemp, const unsigned itemsPerRow);
+void printCtoFChart(const unsigned initialTemp, const unsigned finalTemp, const unsigned itemsPerRow);
+void printFtoCChart(const unsigned initialTemp, const unsigned finalTemp, const unsigned itemsPerRow);
 
 int main() {
 	cout << "Celsius to Fahrenheit:" << endl;
 	printCtoFChart(0, 100, 5);
-	cout << "\nFahrenheit to Celsius: \n";
+	cout << "Fahrenheit to Celsius: \n";
 	printFtoCChart(32, 212, 5);
 }
 
@@ -24,7 +24,7 @@ int fahrenheit(const int celsius) {
 	return (celsius * 9 / 5) + 32;
 }
 
-void printCtoFChart(unsigned initialTemp, const unsigned finalTemp, const unsigned itemsPerRow) {
+void printCtoFChart(const unsigned initialTemp, const unsigned finalTemp, const unsigned itemsPerRow) {
 	unsigned counter{0};
 
 	while (initialTemp + counter <= finalTemp) {
@@ -40,7 +40,7 @@ void printCtoFChart(unsigned initialTemp, const unsigned finalTemp, const unsign
 	cout << endl;
 }
 
-void printFtoCChart(unsigned const initialTemp, const unsigned finalTemp, const unsigned itemsPerRow) {
+void printFtoCChart(const unsigned initialTemp, const unsigned finalTemp, const unsigned itemsPerRow) {
 	unsigned counter{0};
 
 	while (initialTemp + counter <= finalTemp) {
