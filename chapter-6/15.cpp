@@ -4,7 +4,7 @@
 
 using namespace std;
 
-unsigned secondsSince12(unsigned hours, unsigned minutes, unsigned seconds);
+unsigned secondsSince12(const unsigned hours,  const unsigned minutes, const unsigned seconds);
 
 int main() {
 	cout << "Enter HOURS MINUTES SECONDS for the first time register: ";
@@ -21,6 +21,6 @@ int main() {
 }
 
 //Determine the number of seconds since the last 12:00
-unsigned secondsSince12(unsigned hours, unsigned minutes, unsigned seconds) {
+unsigned secondsSince12(const unsigned hours, const unsigned minutes, const unsigned seconds) {
 	return hours * 3600 + minutes * 60 + seconds;
 }
