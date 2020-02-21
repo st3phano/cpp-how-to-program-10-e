@@ -1,5 +1,5 @@
 //Return a number based on student's average
-unsigned qualityPoints(unsigned average) {
+unsigned qualityPoints(const unsigned average) {
 	if (average >= 90) {
 		return 4;
 	}
