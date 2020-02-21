@@ -28,7 +28,7 @@ int main() {
 				cout << "Too low. Try again.\n";
 			}
 
-		}while (guess != correctNumber);
+		} while (guess != correctNumber);
 
 		cout << "Excellent! You guessed the number!\n"
 			"Would you like to play again(y or n) ? \n";
