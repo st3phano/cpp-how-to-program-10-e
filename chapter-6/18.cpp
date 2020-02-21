@@ -7,7 +7,7 @@ bool isPerfect(const unsigned number);
 void printDivisors(const unsigned number);
 
 int main() {
-	const unsigned lastNumber{1000000000};
+	const unsigned lastNumber{1000};
 
 	for (unsigned n{1}; n <= lastNumber; ++n) {
 		if (isPerfect(n)) {
