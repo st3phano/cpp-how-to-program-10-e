@@ -1,5 +1,5 @@
 //Recursive exponentiation
-int power(int base, unsigned exponent) {
+int power(const int base, const unsigned exponent) {
 	if (1 == exponent) {
 		return base;
 	}
