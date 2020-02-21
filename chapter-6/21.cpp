@@ -1,5 +1,5 @@
 //Determine the greatest common divisor of two unsigned integers
-unsigned gcd(unsigned number1, unsigned number2) {
+unsigned gcd(const unsigned number1, const unsigned number2) {
 	unsigned smallestNumber{number1 < number2 ? number1 : number2};
 
 	if (number1 % smallestNumber == 0 && number2 % smallestNumber == 0) {
