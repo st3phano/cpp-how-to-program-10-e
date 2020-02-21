@@ -16,7 +16,7 @@ int main() {
 		unsigned guess;
 
 		cout << "I have a number between 1 and 1000.\n"
-			"Can you guess my number ?\n"
+			"Can you guess my number?\n"
 			"Please type your first guess.\n";
 		do {			
 			cin >> guess;
