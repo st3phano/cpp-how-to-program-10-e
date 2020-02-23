@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void mathFunctions(unsigned value);
+void mathFunctions(const unsigned value);
 
 int main() {
 	for (unsigned i{1}; i <= 5; ++i) {
