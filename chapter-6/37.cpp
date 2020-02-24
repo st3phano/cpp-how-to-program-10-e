@@ -60,7 +60,7 @@ unsigned rollDice() {
 }
 
 bool gameOfCraps() {
-	enum class Status { CONTINUE, WON, LOST };
+	enum class Status {CONTINUE, WON, LOST};
 
 	srand(static_cast<unsigned>(time(0)));
 
