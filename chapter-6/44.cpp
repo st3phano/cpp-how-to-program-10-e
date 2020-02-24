@@ -9,7 +9,7 @@ using namespace std;
 unsigned rollDice();
 
 int main() {
-	enum class Status {CONTINUE, WON, LOST};
+	enum class Status{CONTINUE, WON, LOST};
 
 	unsigned myPoint{0};
 	Status gameStatus;
