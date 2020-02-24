@@ -4,15 +4,9 @@
 
 -If program execution reaches the end of main without encountering a return statement, it’s assumed that the program terminated successfully.
 
--Although it’s not always necessary to initialize every variable explicitly, doing so will help you avoid many kinds of problems.
+-Although it’s not always necessary to initialize every variable explicitly, doing so will help avoid many kinds of problems.
 
--Declare only one variable in each declaration and provide a comment that explains the variable’s purpose in the program.
-
--Use identifiers of 31 characters or fewer to ensure portability.
-
--Avoid using abbreviations in identifiers.
-
--Do not use identifiers that begin with underscores and double underscores.
+-Use identifiers of 31 characters or fewer to ensure portability, avoid using abbreviations and do not use identifiers that begin with underscores and double underscores.
 
 -Place spaces on either side of a binary operator.
 
@@ -25,9 +19,7 @@
 
 <h1>Chapter 3:</h1>
 
--Class names begin with an initial uppercase letter, and member-function and data-member names begin with an initial lowercase letter.
-
--Place a class’s data members last in the class’s body.
+-Class names begin with an initial uppercase letter, and member-function and data-member names begin with an initial lowercase letter. Place class data-members last in the class body.
 
 -Headers should not contain using directives or using declarations.
 
@@ -72,7 +64,7 @@ and the assignment operators =, +=, -=, *=, /= and %= associate from right to le
 
 -Using floating-point numbers in a manner that assumes they’re represented exactly (e.g. using them in comparisons for equality or to perform precise monetary calculations) can lead to incorrect results. Floating-point numbers are represented only approximately.
 
--For all but the most performance-intensive situations, apply the following rule of thumb: First, make your code simple and correct; then make it fast and small, but only if necessary.
+<strong>-For all but the most performance-intensive situations, apply the following rule of thumb: First, make your code simple and correct; then make it fast and small, but only if necessary.</strong>
 
 -Consider the expression (i != 0) && (10 / i == 2). The dependent condition (10 / i== 2) must appear after the && operator to prevent the possibility of division by zero.
 
@@ -99,23 +91,17 @@ and the assignment operators =, +=, -=, *=, /= and %= associate from right to le
 
 -By convention, you should capitalize the first letter of an enum class’s name and use only uppercase letters in enumeration constant names.
 
--Qualifying an enum class’s constant with its typename and :: explicitly identifies the constant as being in the scope of the specified enum class. If another enum class contains the same identifier for one of its constants, it’s always clear which version of the constant is being used, because the typename and :: are required.
-
--Use scoped enums to avoid the potential naming conflicts that can occur with unscoped enum constants.
+-Qualifying an enum class’s constant with its typename and :: explicitly identifies the constant as being in the scope of the specified enum class. If another enum class contains the same identifier for one of its constants, it’s always clear which version of the constant is being used, because the typename and :: are required. Using scoped enums avoid the potential naming conflicts that can occur with unscoped enum constants.
 
 -Local variables also may be declared static. Such variables also have block scope, but unlike other local variables, a static local variable retains its value when the function returns to its caller. The next time the function is called, the static local variable contains the value it had when the function last completed execution. All static local variables of numeric types are initialized to zero by default.
 
--Declaring a variable as global rather than local allows unintended side effects to occur when a function that does not need access to the variable accidentally or maliciously modifies it. In general, variables should be declared in the narrowest scope in which they need to be accessed.
+-Declaring a variable as global rather than local allows unintended side effects to occur when a function that does not need access to the variable accidentally or maliciously modifies it. In general, variables should be declared in the narrowest scope in which they need to be accessed. The const qualifier should be used to enforce the principle of least privilege.
 
 -Stack frame is also known as activation record. If more function calls occur than can have their activation records stored on the function-call stack, a fatal error known as stack overflow occurs.
 
 -If you change the definition of an inline function, you must recompile all of that function’s clients.
 
--The const qualifier should be used to enforce the principle of least privilege.
-
--Because reference parameters are mentioned only by name in the body of the called function, you might inadvertently treat reference parameters as pass-by-value parameters. This can cause unexpected side effects if the original variables are changed by the function.
-
--For passing large objects, use a const reference parameter to simulate the appearance and security of pass-by-value and avoid the overhead of passing a copy of the large object.
+-Because reference parameters are mentioned only by name in the body of the called function, you might inadvertently treat reference parameters as pass-by-value parameters. This can cause unexpected side effects if the original variables are changed by the function. For passing large objects, use a const reference parameter to simulate the appearance and security of pass-by-value and avoid the overhead of passing a copy of the large object.
 
 -When returning a reference to a local variable, unless that variable is declared static, the reference refers to a variable that’s discarded when the function terminates. An attempt to access such a variable yields undefined behavior.
 
